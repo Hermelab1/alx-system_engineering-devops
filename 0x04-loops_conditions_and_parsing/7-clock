@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-# Displays Hour
+# Displays time for 12 Hours and 59 min 
 
 counthour=0
 countmin=1
