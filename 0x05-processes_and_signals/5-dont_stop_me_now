@@ -1,8 +1,3 @@
 #!/usr/bin/env bash
-#Terminat the ittration using kill
-
-./4-to_infinity_and_beyond &
-PID=$!
-sleep 5
-kill $PID
-echo "Terminated"
+# This script kills a process using command kill
+kill "$(ps -x | pgrep -f beyond)"
