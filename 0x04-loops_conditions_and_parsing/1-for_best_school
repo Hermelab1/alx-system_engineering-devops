@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # The Script is doing display Best school 10 times
 
-i=0
-for i in {1..10}
+for count in {1..10}
 do
 	echo "Best School"
+	((count++))
 done
