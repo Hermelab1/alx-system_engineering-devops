@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #A script to list current running process
 
-ps axjf
+ps -axuf 
