@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Displays the content of the current directory
+
+for i in *
+do
+	if [ -f "$i" ] && [ "${i:0:1}" != "." ]
+	then
+		files=$(echo "$i" | cut -d'-' -f2-)
+		echo "$files"
+	fi
+done
