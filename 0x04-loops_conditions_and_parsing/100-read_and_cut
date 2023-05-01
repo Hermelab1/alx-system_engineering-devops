@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays the content of the file /etc/passwd
+
+while IFS=: read -r username x uid gid gecos home shell
+do
+  echo "username: $username"
+  echo "user id: $uid"
+  echo "home directory path for the user: $home"
+done < /etc/passwd
