@@ -3,9 +3,9 @@
 
 for pid in /proc/[0-9]*
 do
-    if [ -f $pid/cmdline ]; then
-        if grep -q bash $pid/cmdline; then
-            echo "$(basename $pid) $(cat $pid/comm)"
+    if [ -f "$pid"/cmdline ]; then
+        if grep -q bash "$pid"/cmdline; then
+            echo "$(basename "$pid") $(cat "$pid"/comm)"
         fi
     fi
 done
