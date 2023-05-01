@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# print Best School Using While Loop
 
 count=0
 
