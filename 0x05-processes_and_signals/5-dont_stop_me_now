@@ -5,3 +5,4 @@
 PID=$!
 sleep 5
 kill $PID
+echo "Terminated"
