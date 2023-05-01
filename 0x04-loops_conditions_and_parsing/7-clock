@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Displays Hour
+
+counthour=0
+countmin=1
+
+while [ $counthour -le 12 ]
+do
+	echo "Hour: $counthour"
+	while [ $countmin -le 59 ]
+	do
+		echo $countmin
+		((countmin++))
+	done
+	
+	countmin=1
+	((counthour++))
+done
