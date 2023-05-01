@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# To display lines containg the bash word
+
+while read -r line; do
+  if [[ $line == *"bash"* ]]; then
+    echo "$line"
+  fi
+done < <(ps -ef)
